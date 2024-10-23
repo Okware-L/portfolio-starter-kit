@@ -7,12 +7,16 @@ export default function Page() {
         Okware Lewis.
       </h1>
       <div className="font-extralight text-sm mb-16">
+        <span className="font-extralight text-sm">
+          Web3 Developer || Smart Contract Engineer
+        </span>{" "}
+        <br />
         Nairobi, Kenya.
         <br />
         Since 2020.
       </div>
       <p className="mb-4">
-        {`I'm a Web3 architect specializing in seamless blockchain integrations across EVM and TVM networks. While others struggle with fragmented blockchain development, I bridge the gap by delivering end-to-end solutions that take decentralized applications from concept to production. My expertise in smart contract development ensures your project's foundation is secure, scalable, and efficient. Whether you need Ethereum-based solutions or Telegram-native applications, I bring a comprehensive understanding of both ecosystems to transform your blockchain vision into reality.`}
+        {`I'm a Web3 architect specializing in seamless blockchain integrations across the Ethereum (EVM) and The Open Network (TVM) networks. While others struggle with fragmented blockchain development, I bridge the gap by delivering end-to-end solutions that take decentralized applications from concept to production. My expertise in smart contract development ensures your project's foundation is secure, scalable, and efficient. Whether you need Ethereum-based solutions or Telegram-native applications, I bring a comprehensive understanding of both ecosystems to transform your blockchain vision into reality.`}
       </p>
       <div className="my-8">
         <BlogPosts />

@@ -1,21 +1,22 @@
-import { BlogPosts } from 'app/components/posts'
+import { BlogPosts } from "app/components/posts";
 
 export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+        Okware Lewis.
       </h1>
+      <div className="font-extralight text-sm mb-16">
+        Nairobi, Kenya.
+        <br />
+        Since 2020.
+      </div>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        {`I'm a Web3 architect specializing in seamless blockchain integrations across EVM and TVM networks. While others struggle with fragmented blockchain development, I bridge the gap by delivering end-to-end solutions that take decentralized applications from concept to production. My expertise in smart contract development ensures your project's foundation is secure, scalable, and efficient. Whether you need Ethereum-based solutions or Telegram-native applications, I bring a comprehensive understanding of both ecosystems to transform your blockchain vision into reality.`}
       </p>
       <div className="my-8">
         <BlogPosts />
       </div>
     </section>
-  )
+  );
 }

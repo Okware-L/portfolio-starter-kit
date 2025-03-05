@@ -8,7 +8,7 @@ export default function Page() {
       </h1>
       <div className="font-extralight text-sm mb-16">
         <span className="font-extralight text-sm">
-          Web3 Developer || Smart Contract Engineer
+          Web3 Developer || Smart Contract Engineer || Smart contract security
         </span>{" "}
         <br />
         Nairobi, Kenya.
@@ -16,7 +16,9 @@ export default function Page() {
         Since 2020.
       </div>
       <p className="mb-4">
-        {`I'm a Web3 architect specializing in seamless blockchain integrations across the Ethereum (EVM) and The Open Network (TVM) networks. While others struggle with fragmented blockchain development, I bridge the gap by delivering end-to-end solutions that take decentralized applications from concept to production. My expertise in smart contract development ensures your project's foundation is secure, scalable, and efficient. Whether you need Ethereum-based solutions or Telegram-native applications, I bring a comprehensive understanding of both ecosystems to transform your blockchain vision into reality.`}
+        {`
+Results-driven Web3/Solidity Engineer skilled in the end-to-end software development life cycle for blockchain applications. Proven expertise in designing, implementing, and deploying secure, scalable decentralized applications. Proficient in Solidity and Web3 protocols, with strong competence in smart contract engineering, architecting, and security. Adept at ensuring robustness and resilience against vulnerabilities while optimizing performance. Collaborative and innovation-driven, committed to staying abreast of emerging trends and contributing to all phases of development, from conceptualization to deployment.  
+`}
       </p>
       <div className="my-8">
         <BlogPosts />

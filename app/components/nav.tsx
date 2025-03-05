@@ -4,8 +4,8 @@ const navItems = {
   "/": {
     name: "home",
   },
-  "/blog": {
-    name: "blog",
+  "/insights": {
+    name: "Insights",
   },
 };
 

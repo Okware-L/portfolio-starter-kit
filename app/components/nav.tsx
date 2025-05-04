@@ -4,12 +4,18 @@ type NavItem = {
   name: string;
   href?: string; // Optional for external links
   external?: boolean; // Optional for differentiating internal and external links
+  download?: boolean; // Added download attribute
 };
 
 const navItems: Record<string, NavItem> = {
   "/": { name: "home" },
-  "/insights": { name: "Insights" },
-  "/resume": { name: "Resume", external: true, href: "../../resume.pdf" },
+  "/insights": { name: "Xp" },
+  "/resume.pdf": { 
+    name: "Resume", 
+    external: true, 
+    download: true, // Add download attribute
+    href: "/resume.pdf" // Point directly to file in public directory
+  },
 };
 
 export function Navbar() {
@@ -21,13 +27,14 @@ export function Navbar() {
           id="nav"
         >
           <div className="flex flex-row space-x-0 pr-10">
-            {Object.entries(navItems).map(([path, { name, external, href }]) =>
+            {Object.entries(navItems).map(([path, { name, external, href, download }]) =>
               external && href ? (
                 <a
                   key={path}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  download={download}
                   className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
                 >
                   {name}

@@ -8,7 +8,7 @@ type NavItem = {
 };
 
 const navItems: Record<string, NavItem> = {
-  "/": { name: "home" },
+  "/": { name: "Home" },
   "/insights": { name: "Xp" },
   "/resume.pdf": { 
     name: "Resume", 

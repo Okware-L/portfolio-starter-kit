@@ -1,12 +1,15 @@
 import Link from "next/link";
 
-const navItems = {
-  "/": {
-    name: "home",
-  },
-  "/insights": {
-    name: "Insights",
-  },
+type NavItem = {
+  name: string;
+  href?: string; // Optional for external links
+  external?: boolean; // Optional for differentiating internal and external links
+};
+
+const navItems: Record<string, NavItem> = {
+  "/": { name: "home" },
+  "/insights": { name: "Insights" },
+  "/resume": { name: "Resume", external: true, href: "../../resume.pdf" },
 };
 
 export function Navbar() {
@@ -18,8 +21,18 @@ export function Navbar() {
           id="nav"
         >
           <div className="flex flex-row space-x-0 pr-10">
-            {Object.entries(navItems).map(([path, { name }]) => {
-              return (
+            {Object.entries(navItems).map(([path, { name, external, href }]) =>
+              external && href ? (
+                <a
+                  key={path}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                >
+                  {name}
+                </a>
+              ) : (
                 <Link
                   key={path}
                   href={path}
@@ -27,8 +40,8 @@ export function Navbar() {
                 >
                   {name}
                 </Link>
-              );
-            })}
+              )
+            )}
           </div>
         </nav>
       </div>

@@ -8,7 +8,7 @@ export default function Page() {
       </h1>
       <div className="font-extralight text-sm mb-16">
         <span className="font-extralight text-sm">
-          Web3 Developer || Smart Contract Engineer || Smart contract security
+          Web3 Developer || Smart Contract Engineer || Smart contract security & Researcher.
         </span>{" "}
         <br />
         Nairobi, Kenya.
@@ -17,11 +17,10 @@ export default function Page() {
       </div>
       <p className="mb-4">
         {`
-Results-driven Web3/Solidity Engineer skilled in the end-to-end software development life cycle for blockchain applications. Proven expertise in designing, implementing, and deploying secure, scalable decentralized applications. Proficient in Solidity and Web3 protocols, with strong competence in smart contract engineering, architecting, and security. Adept at ensuring robustness and resilience against vulnerabilities while optimizing performance. Collaborative and innovation-driven, committed to staying abreast of emerging trends and contributing to all phases of development, from conceptualization to deployment.  
-`}
+Smart Contract Architect with end-to-end SDLC experience in decentralized application development. Security-first developer and blockchain security researcher focused on building robust, audit-ready systems. Skilled in smart contract design, Web3 integration, and non-Web3-native user onboarding. Delivering scalable, secure DApps from architecture to production.`}
       </p>
       <div className="my-8">
-        <BlogPosts />
+       Hire me.
       </div>
     </section>
   );

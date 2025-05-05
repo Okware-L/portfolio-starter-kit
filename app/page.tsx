@@ -8,7 +8,7 @@ export default function Page() {
       </h1>
       <div className="font-extralight text-sm mb-16">
         <span className="font-extralight text-sm">
-          Web3 Developer || Smart Contract Engineer || Smart contract security & Researcher.
+          Software Engineer || Smart contract auditing & Security Researcher.
         </span>{" "}
         <br />
         Nairobi, Kenya.

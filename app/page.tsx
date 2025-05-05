@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        Okware Lewis.
+        Okware Lewis' website
       </h1>
       <div className="font-extralight text-sm mb-16">
         <span className="font-extralight text-sm">

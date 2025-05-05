@@ -12,9 +12,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
     default: "Okware",
-    template: "",
+    template: "%s | Okware",
   },
   description: "This is my portfolio.",
+  icons: {
+    icon: "/dot.png", 
+  },
   openGraph: {
     title: "My Portfolio",
     description: "This is my portfolio.",
@@ -36,7 +39,7 @@ export const metadata: Metadata = {
   },
 };
 
-const cx = (...classes) => classes.filter(Boolean).join(" ");
+const cx = (...classes: string[]) => classes.filter(Boolean).join(" ");
 
 export default function RootLayout({
   children,

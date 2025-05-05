@@ -9,7 +9,7 @@ type NavItem = {
 
 const navItems: Record<string, NavItem> = {
   "/": { name: "Home" },
-  "/insights": { name: "Xp" },
+  "/insights": { name: "Exp" },
   "/resume.pdf": { 
     name: "Resume", 
     external: true, 
